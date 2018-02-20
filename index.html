@@ -12,10 +12,10 @@
 		</div>
 		<script>
 			function onSuccess() {
-			    window.webkit.messageHandlers.callbackHandler.postMessage('This is success');
+			    window.webkit.messageHandlers.onSuccess.postMessage('This is success');
 			}
 			function onError() {
-				window.webkit.messageHandlers.callbackHandler.postMessage('This is error');
+				window.webkit.messageHandlers.onError.postMessage('This is error');
 			    
 			}
 		</script>
