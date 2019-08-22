@@ -17,13 +17,13 @@ class CustomHeader extends React.Component {
     });
     if (e.key === "home") {
       this.props.history.push({
-        pathname: "/",
+        pathname: "/home",
       });
     }
   };
 
   componentDidMount() {
-    if (this.props.location.pathname === "/") {
+    if (this.props.location.pathname === "/home") {
       this.setState({
         currentMenu: "home"
       })

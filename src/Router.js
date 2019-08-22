@@ -8,6 +8,7 @@ import Home from './Home.js';
 export default () => (
 <BrowserRouter onUpdate={() => {console.log('updating router');}}>
   <Switch>
+    <Route exact path="/home" component={Home}/>
     <Route exact path="/" component={Home}/>
     <Route component={NoMatch} />
   </Switch>
